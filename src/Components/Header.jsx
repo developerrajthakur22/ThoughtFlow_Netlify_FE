@@ -24,8 +24,8 @@ const Header = () => {
         if(!jwt){
           alert("Session expired!")
           console.log("Navigate to /Login")
-          // window.location.href = "/Login"
-          navigate("/Login")
+          window.location.href = "/Login"
+          //navigate("/Login")
         }
   }, []);
 

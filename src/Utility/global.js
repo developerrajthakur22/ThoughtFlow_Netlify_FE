@@ -1,4 +1,4 @@
-export const BASE_URL = `http://localhost:5000`
+export const BASE_URL = process.env.BASE_URL
 
 export const getCookie = (name) => {
     const cookieValue = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');

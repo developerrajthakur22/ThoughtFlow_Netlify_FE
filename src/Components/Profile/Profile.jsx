@@ -14,9 +14,6 @@ const Profile = () => {
 
     const dispatch = useDispatch();
 
-    const getState = useSelector((state) => state.profile);
-    console.log(getState);
-
     const [followers, setFollowers] = useState([]);
     const [following, setFollowing] = useState([]);
 

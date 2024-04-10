@@ -23,7 +23,9 @@ const Header = () => {
         userDetails.fetchUserDetails(userId);
         if(!jwt){
           alert("Session expired!")
-          window.location.href = "/Login"
+          console.log("Navigate to /Login")
+          // window.location.href = "/Login"
+          navigate("/Login")
         }
   }, []);
 

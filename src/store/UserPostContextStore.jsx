@@ -43,7 +43,7 @@ const UserPostContextProvider = ({ children }) => {
 
     //Add New posts api
     const makePostApiCall = (post) => {
-        fetch(`${BASE_URL}/AddPost/1`, {
+        fetch(`${BASE_URL}/AddPost/${userId}`, {
             headers: {
                 'Content-Type': 'application/json',
                 "Authorization": `Bearer ${jwt}`
